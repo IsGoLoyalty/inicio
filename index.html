@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISGO - Mi Tarjeta Digital</title>
+    <!-- Cargamos la librería de iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos Globales - Colores base de ISGO (1000107812.png) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1d3557, #111111);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Logo / Imagen de Perfil */
+        .profile-img {
+            width: 120px;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        /* Título y Subtítulo */
+        h1 {
+            font-size: 1.6rem;
+            margin: 5px 0;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 35px;
+        }
+
+        /* Contenedor de los Enlaces */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* Estilo de los Recuadros / Botones */
+        .link-card {
+            display: flex;
+            align-items: center;
+            background-color: #3b71b7;
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 14px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        /* Espaciado e igualación para los iconos */
+        .link-card i {
+            font-size: 1.3rem;
+            width: 30px; /* Ancho fijo para que todos los textos se alineen igual */
+            text-align: left;
+        }
+
+        /* Texto centrado dentro del espacio restante */
+        .link-card span {
+            flex-grow: 1;
+            text-align: center;
+            margin-right: 30px; /* Compensa el ancho del icono para centrar perfecto */
+        }
+
+        /* Borde interno para el acento dorado de ISGO */
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            border-radius: 12px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        /* Efecto Hover */
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            background-color: #1d3557;
+        }
+
+        /* Activación del borde dorado al pasar el mouse */
+        .link-card:hover::before {
+            border-color: #f6c134; /* Amarillo del ticket de ISGO */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo de ISGO -->
+        <img src="Logoo.png" alt="Logo ISGO" class="profile-img">
+
+        <!-- Nombre y Slogan -->
+        <h1>ISGO</h1>
+        <p>El impulso digital que tu negocio necesita.</p>
+
+        <!-- Bloque de Botones con Iconos Oficiales -->
+        <div class="links-container">
+            
+            <!-- Botón Instagram -->
+            <a href="https://www.instagram.com/isgo.loyalty?igsh=OHhiNDhpcTVqM20w" target="_blank" class="link-card">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+
+            <!-- Botón Página Web -->
+            <a href="https://isgoloyalty.github.io/Home" target="_blank" class="link-card">
+                <i class="fas fa-globe"></i>
+                <span>Página Web</span>
+            </a>
+
+            <!-- Botón WhatsApp -->
+            <a href="https://wa.me/6391319973" target="_blank" class="link-card">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
